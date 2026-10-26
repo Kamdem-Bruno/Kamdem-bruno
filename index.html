@@ -31,31 +31,26 @@ body{background:#f5f5f5;color:#222}
 </style>
 </head>
 <body>
-<div class="header"><div class="logo">KC | KAMDEM</div><div class="nav"><a href="#realisations">Realisation</a><a href="https://wa.me/237659635612?text=Bonjour%20Christian">Devis</a></div></div>
+<div class="header"><div class="logo">KC | KAMDEM</div><div class="nav"><a href="#realisations">Realisation</a><a href="#devis">Devis</a></div></div>
 <div class="hero">
 <div class="badge">Disponible a Yaounde - Devis 24h</div>
 <h1>Technicien Batiment a <span>Yaounde</span><br>Je construis ta maison comme la mienne</h1>
 <p>Fondation, elevation, finition. Tous les jours sur le chantier.</p>
-<a class="btn" href="https://wa.me/237659635612?text=Bonjour%20Christian%2C%20j'ai%20vu%20ton%20site%20uno-1.netlify.app">Demander un devis 24H</a>
+<a class="btn" href="#devis">Demander un devis 24H</a>
 </div>
 <div class="services">
 <div class="card"><h3>Fondation complete</h3><p>Fouille, ferraillage, longrines. Sol Yaounde maitrise.</p><div class="price">A partir de 300k</div></div>
 <div class="card"><h3>Plan 2D / 3D</h3><p>Plan simple, devis detaille.</p><div class="price">50.000F</div></div>
 <div class="card"><h3>Suivi de chantier</h3><p>Present tous les jours. Photos chaque soir.</p><div class="price">100k / mois</div></div>
 </div>
-  <!-- FORMULAIRE DE DEVIS - VERSION FINALE V2 -->
-<div style="background:#111;padding:40px 18px;">
+
+<div style="background:#111;padding:40px 18px;" id="devis">
 <h2 style="color:#fff;text-align:center;margin-bottom:8px;">Demander un devis gratuit</h2>
 <p style="color:#9ca3af;text-align:center;margin-bottom:25px;font-size:14px">Réponse en 2h sur WhatsApp</p>
-
 <form id="devisForm" style="max-width:500px;margin:0 auto;background:#fff;padding:22px;border-radius:12px;display:grid;gap:14px">
-
 <input type="text" id="nom" placeholder="Ton nom complet" required style="padding:13px;border:1px solid #ddd;border-radius:8px;font-size:15px">
-
 <input type="tel" id="telephone" placeholder="Ton numéro WhatsApp ex: 659..." required style="padding:13px;border:1px solid #ddd;border-radius:8px;font-size:15px">
-
 <input type="text" id="quartier" placeholder="Quartier ex: Odza, Biyem-Assi" required style="padding:13px;border:1px solid #ddd;border-radius:8px;font-size:15px">
-
 <select id="type" style="padding:13px;border:1px solid #ddd;border-radius:8px;font-size:15px;background:#fff">
 <option value="Construction R+0">Construction R+0</option>
 <option value="Construction R+1">Construction R+1</option>
@@ -63,38 +58,32 @@ body{background:#f5f5f5;color:#222}
 <option value="Plan 2D/3D">Plan 2D/3D</option>
 <option value="Rénovation">Rénovation</option>
 </select>
-
 <input type="text" id="budget" placeholder="Ton budget ex: 5 millions FCFA" style="padding:13px;border:1px solid #ddd;border-radius:8px;font-size:15px">
-
-<button type="submit" style="background:#facc15;color:#111;padding:15px;border:none;border-radius:8px;font-weight:900;font-size:16px;cursor:pointer">ENVOYER SUR WHATSAPP</button>
+<button type="submit" id="btnSubmit" style="background:#facc15;color:#111;padding:15px;border:none;border-radius:8px;font-weight:900;font-size:16px;cursor:pointer">ENVOYER SUR WHATSAPP</button>
 </form>
 </div>
 
 <script>
 document.getElementById('devisForm').addEventListener('submit', function(e){
   e.preventDefault();
-
-  let nom = document.getElementById('nom').value;
-  let telephone = document.getElementById('telephone').value;
-  let quartier = document.getElementById('quartier').value;
+  let btn = document.getElementById('btnSubmit');
+  btn.innerText = "Ouverture WhatsApp...";
+  
+  let nom = document.getElementById('nom').value.trim();
+  let telephone = document.getElementById('telephone').value.trim();
+  let quartier = document.getElementById('quartier').value.trim();
   let type = document.getElementById('type').value;
-  let budget = document.getElementById('budget').value;
+  let budget = document.getElementById('budget').value.trim() || "Non précisé";
 
-  let message = `Bonjour Christian 👋
-J'ai vu ton site uno-1.netlify.app
-
-Je suis ${nom}
-Quartier: ${quartier}
-Tel: ${telephone}
-Projet: ${type}
-Budget: ${budget}
-
-Peux-tu me faire un devis svp ?`;
+  let message = `Bonjour Christian 👋\nJe viens de ton site kamdem-bruno.vercel.app\n\n👤 Nom: ${nom}\n📍 Quartier: ${quartier}\n📱 Mon Tel: ${telephone}\n🏗️ Projet: ${type}\n💰 Budget: ${budget}\n\nPeux-tu me faire un devis svp ?`;
 
   let url = `https://wa.me/237659635612?text=${encodeURIComponent(message)}`;
   window.open(url, '_blank');
+  
+  setTimeout(()=>{ btn.innerText = "ENVOYER SUR WHATSAPP"; }, 2000);
 });
 </script>
+
 <div class="gallery" id="realisations">
 <h2>Mes Chantiers Reels a Yaounde</h2>
 <div class="grid">
@@ -109,8 +98,7 @@ Peux-tu me faire un devis svp ?`;
 <div class="avis-box"><b>Mme Ngo - Emana</b> : Devis clair, pas de surprise. ⭐⭐⭐⭐⭐</div>
 <div class="avis-box"><b>Projet Nkoabang</b> : Villa livree, toiture bien posee. ⭐⭐⭐⭐⭐</div>
 </div>
-<div class="footer">KAMDEM CHRISTIAN - Yaounde<br>659 635 012 | Devis gratuit 24h</div>
-<a class="whatsapp-float" href="https://wa.me/237659635612?text=Bonjour%20Christian%2C%20j'ai%20vu%20ton%20site">💬</a>
+<div class="footer">KAMDEM CHRISTIAN - Yaounde<br>659 635 612 | Devis gratuit 24h</div>
+<a class="whatsapp-float" href="https://wa.me/237659635612?text=Bonjour%20Christian%2C%20j'ai%20vu%20ton%20site%20kamdem-bruno.vercel.app">💬</a>
 </body>
 </html>
-
