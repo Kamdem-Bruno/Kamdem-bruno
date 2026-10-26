@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KAMDEM CHRISTIAN - Technicien Batiment Yaounde</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:#f5f5f5;color:#222}
+.header{background:#111;color:#fff;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
+.logo{font-weight:900;color:#facc15;font-size:20px}
+.nav a{color:#fff;text-decoration:none;margin-left:12px;font-size:13px}
+.hero{background:#111;color:#fff;padding:55px 20px;text-align:center}
+.hero h1{font-size:30px;line-height:1.2;margin-bottom:12px}
+.hero h1 span{color:#facc15}
+.btn{background:#facc15;color:#111;padding:13px 26px;border-radius:8px;font-weight:800;text-decoration:none;display:inline-block;margin-top:10px;}
+.badge{display:inline-block;background:#222;border:1px solid #facc15;color:#facc15;padding:5px 11px;border-radius:20px;font-size:11px;margin-bottom:12px}
+.services{padding:35px 18px;display:grid;gap:16px;max-width:1100px;margin:0 auto}
+.card{background:#fff;padding:18px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.07)}
+.price{color:#d4a70b;font-weight:900;font-size:18px;margin-top:8px}
+.gallery{padding:35px 18px;background:#fff}
+.gallery h2{text-align:center;margin-bottom:20px;font-size:22px}
+.grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:16px}
+@media(min-width:768px){.grid{grid-template-columns:1fr 1fr 1fr}.services{grid-template-columns:1fr 1fr 1fr}}
+.item img{width:100%;height:240px;object-fit:cover;border-radius:10px}
+.item p{background:#111;color:#fff;padding:9px;border-radius:0 0 10px 10px;margin-top:-6px;font-size:12px;text-align:center}
+.avis{padding:35px 18px;max-width:1100px;margin:0 auto}
+.avis-box{background:#fff;border-left:4px solid #facc15;padding:12px;margin-bottom:10px;border-radius:6px;font-size:13px}
+.footer{background:#111;color:#777;text-align:center;padding:22px;font-size:12px}
+.whatsapp-float{position:fixed;bottom:80px;right:18px;background:#25D366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;box-shadow:0 4px 10px rgba(0,0,0,.3);z-index:999}
+</style>
+</head>
+<body>
+<div class="header"><div class="logo">KC | KAMDEM</div><div class="nav"><a href="#realisations">Realisation</a><a href="https://wa.me/237659635612?text=Bonjour%20Christian">Devis</a></div></div>
+<div class="hero">
+<div class="badge">Disponible a Yaounde - Devis 24h</div>
+<h1>Technicien Batiment a <span>Yaounde</span><br>Je construis ta maison comme la mienne</h1>
+<p>Fondation, elevation, finition. Tous les jours sur le chantier.</p>
+<a class="btn" href="https://wa.me/237659635612?text=Bonjour%20Christian%2C%20j'ai%20vu%20ton%20site%20uno-1.netlify.app">Demander un devis 24H</a>
+</div>
+<div class="services">
+<div class="card"><h3>Fondation complete</h3><p>Fouille, ferraillage, longrines. Sol Yaounde maitrise.</p><div class="price">A partir de 300k</div></div>
+<div class="card"><h3>Plan 2D / 3D</h3><p>Plan simple, devis detaille.</p><div class="price">50.000F</div></div>
+<div class="card"><h3>Suivi de chantier</h3><p>Present tous les jours. Photos chaque soir.</p><div class="price">100k / mois</div></div>
+</div>
+  <!-- FORMULAIRE DE DEVIS - VERSION FINALE V2 -->
+<div style="background:#111;padding:40px 18px;">
+<h2 style="color:#fff;text-align:center;margin-bottom:8px;">Demander un devis gratuit</h2>
+<p style="color:#9ca3af;text-align:center;margin-bottom:25px;font-size:14px">Réponse en 2h sur WhatsApp</p>
+
+<form id="devisForm" style="max-width:500px;margin:0 auto;background:#fff;padding:22px;border-radius:12px;display:grid;gap:14px">
+
+<input type="text" id="nom" placeholder="Ton nom complet" required style="padding:13px;border:1px solid #ddd;border-radius:8px;font-size:15px">
+
+<input type="tel" id="telephone" placeholder="Ton numéro WhatsApp ex: 659..." required style="padding:13px;border:1px solid #ddd;border-radius:8px;font-size:15px">
+
+<input type="text" id="quartier" placeholder="Quartier ex: Odza, Biyem-Assi" required style="padding:13px;border:1px solid #ddd;border-radius:8px;font-size:15px">
+
+<select id="type" style="padding:13px;border:1px solid #ddd;border-radius:8px;font-size:15px;background:#fff">
+<option value="Construction R+0">Construction R+0</option>
+<option value="Construction R+1">Construction R+1</option>
+<option value="Fondation seulement">Fondation seulement</option>
+<option value="Plan 2D/3D">Plan 2D/3D</option>
+<option value="Rénovation">Rénovation</option>
+</select>
+
+<input type="text" id="budget" placeholder="Ton budget ex: 5 millions FCFA" style="padding:13px;border:1px solid #ddd;border-radius:8px;font-size:15px">
+
+<button type="submit" style="background:#facc15;color:#111;padding:15px;border:none;border-radius:8px;font-weight:900;font-size:16px;cursor:pointer">ENVOYER SUR WHATSAPP</button>
+</form>
+</div>
+
+<script>
+document.getElementById('devisForm').addEventListener('submit', function(e){
+  e.preventDefault();
+
+  let nom = document.getElementById('nom').value;
+  let telephone = document.getElementById('telephone').value;
+  let quartier = document.getElementById('quartier').value;
+  let type = document.getElementById('type').value;
+  let budget = document.getElementById('budget').value;
+
+  let message = `Bonjour Christian 👋
+J'ai vu ton site uno-1.netlify.app
+
+Je suis ${nom}
+Quartier: ${quartier}
+Tel: ${telephone}
+Projet: ${type}
+Budget: ${budget}
+
+Peux-tu me faire un devis svp ?`;
+
+  let url = `https://wa.me/237659635612?text=${encodeURIComponent(message)}`;
+  window.open(url, '_blank');
+});
+</script>
+<div class="gallery" id="realisations">
+<h2>Mes Chantiers Reels a Yaounde</h2>
+<div class="grid">
+<div class="item"><img src="chantier1.jpg"><p>Fondation villa - Longrines</p></div>
+<div class="item"><img src="chantier2.jpg"><p>Elevation - Equipe en action</p></div>
+<div class="item"><img src="chantier3.jpg"><p>Villa R+0 - Toiture + colonnes</p></div>
+</div>
+</div>
+<div class="avis">
+<h2 style="text-align:center;margin-bottom:16px">Ils m'ont fait confiance</h2>
+<div class="avis-box"><b>M. Atangana - Odza</b> : Fondation propre, respect delai. ⭐⭐⭐⭐⭐</div>
+<div class="avis-box"><b>Mme Ngo - Emana</b> : Devis clair, pas de surprise. ⭐⭐⭐⭐⭐</div>
+<div class="avis-box"><b>Projet Nkoabang</b> : Villa livree, toiture bien posee. ⭐⭐⭐⭐⭐</div>
+</div>
+<div class="footer">KAMDEM CHRISTIAN - Yaounde<br>659 635 012 | Devis gratuit 24h</div>
+<a class="whatsapp-float" href="https://wa.me/237659635612?text=Bonjour%20Christian%2C%20j'ai%20vu%20ton%20site">💬</a>
+</body>
+</html>
+
