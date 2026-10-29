@@ -3,102 +3,127 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KAMDEM CHRISTIAN - Technicien Batiment Yaounde</title>
+<title>KAMDEM CHRISTIAN - Technicien Bâtiment Yaoundé | Devis 24h</title>
+<meta name="description" content="Technicien Bâtiment à Yaoundé. Construction, fondation, plan 2D/3D. Devis gratuit 24h. Chantier suivi tous les jours. 659 635 612">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-body{background:#f5f5f5;color:#222}
-.header{background:#111;color:#fff;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
-.logo{font-weight:900;color:#facc15;font-size:20px}
-.nav a{color:#fff;text-decoration:none;margin-left:12px;font-size:13px}
-.hero{background:#111;color:#fff;padding:55px 20px;text-align:center}
-.hero h1{font-size:30px;line-height:1.2;margin-bottom:12px}
+body{background:#f7f7f7;color:#1a1a1a;line-height:1.5}
+.header{background:#0f0f0f;color:#fff;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
+.logo{font-weight:900;color:#facc15;font-size:19px;letter-spacing:.5px}
+.nav a{color:#fff;text-decoration:none;margin-left:14px;font-size:13px;font-weight:600}
+.hero{background:linear-gradient(180deg,#111 0%,#1e1e1e 100%);color:#fff;padding:60px 20px;text-align:center}
+.hero h1{font-size:32px;line-height:1.15;margin-bottom:12px}
 .hero h1 span{color:#facc15}
-.btn{background:#facc15;color:#111;padding:13px 26px;border-radius:8px;font-weight:800;text-decoration:none;display:inline-block;margin-top:10px;}
-.badge{display:inline-block;background:#222;border:1px solid #facc15;color:#facc15;padding:5px 11px;border-radius:20px;font-size:11px;margin-bottom:12px}
-.services{padding:35px 18px;display:grid;gap:16px;max-width:1100px;margin:0 auto}
-.card{background:#fff;padding:18px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,.07)}
-.price{color:#d4a70b;font-weight:900;font-size:18px;margin-top:8px}
-.gallery{padding:35px 18px;background:#fff}
-.gallery h2{text-align:center;margin-bottom:20px;font-size:22px}
-.grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:16px}
-@media(min-width:768px){.grid{grid-template-columns:1fr 1fr 1fr}.services{grid-template-columns:1fr 1fr 1fr}}
-.item img{width:100%;height:240px;object-fit:cover;border-radius:10px}
-.item p{background:#111;color:#fff;padding:9px;border-radius:0 0 10px 10px;margin-top:-6px;font-size:12px;text-align:center}
-.avis{padding:35px 18px;max-width:1100px;margin:0 auto}
-.avis-box{background:#fff;border-left:4px solid #facc15;padding:12px;margin-bottom:10px;border-radius:6px;font-size:13px}
-.footer{background:#111;color:#777;text-align:center;padding:22px;font-size:12px}
-.whatsapp-float{position:fixed;bottom:80px;right:18px;background:#25D366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;text-decoration:none;box-shadow:0 4px 10px rgba(0,0,0,.3);z-index:999}
+.hero p{color:#cbd5e1;max-width:600px;margin:0 auto 15px}
+.btn{background:#facc15;color:#111;padding:14px 28px;border-radius:10px;font-weight:900;text-decoration:none;display:inline-block;margin-top:10px;box-shadow:0 4px 12px rgba(250,204,21,.3)}
+.badge{display:inline-block;background:#222;border:1px solid #facc15;color:#facc15;padding:6px 12px;border-radius:20px;font-size:11px;margin-bottom:14px;font-weight:700}
+.trust{display:flex;gap:12px;justify-content:center;margin-top:18px;flex-wrap:wrap;font-size:12px;color:#9ca3af}
+.trust span{background:#1f1f1f;padding:5px 10px;border-radius:20px;border:1px solid #2a2a2a}
+.services{padding:40px 18px;display:grid;gap:16px;max-width:1100px;margin:0 auto}
+.card{background:#fff;padding:20px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.06);border:1px solid #eee}
+.card h3{font-size:16px;margin-bottom:6px}
+.card p{font-size:13px;color:#6b7280}
+.card ul{margin:10px 0 0 18px;font-size:12px;color:#374151}
+.price{color:#111;font-weight:900;font-size:20px;margin-top:10px}
+.price small{font-size:12px;color:#6b7280;font-weight:400}
+.steps{padding:40px 18px;background:#fff;text-align:center}
+.steps h2{margin-bottom:22px}
+.steps-grid{max-width:900px;margin:0 auto;display:grid;gap:14px;text-align:left}
+.step{display:flex;gap:12px;background:#f9fafb;padding:14px;border-radius:10px;border:1px solid #eee}
+.step b{background:#facc15;color:#111;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0}
+.gallery{padding:40px 18px;background:#f7f7f7}
+.gallery h2{text-align:center;margin-bottom:6px}
+.gallery .sub{text-align:center;color:#6b7280;font-size:13px;margin-bottom:20px}
+.grid{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:18px}
+@media(min-width:768px){.grid{grid-template-columns:1fr 1fr 1fr}.services{grid-template-columns:1fr 1fr 1fr}.steps-grid{grid-template-columns:1fr 1fr 1fr}}
+.item img{width:100%;height:260px;object-fit:cover;border-radius:12px 12px 0 0}
+.item{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.06)}
+.item p{padding:10px 12px;font-size:12px;font-weight:700;background:#111;color:#fff;text-align:center}
+.item small{display:block;color:#9ca3af;font-weight:400;margin-top:3px}
+.avis{padding:40px 18px;max-width:1100px;margin:0 auto}
+.avis-box{background:#fff;border-left:4px solid #facc15;padding:14px;margin-bottom:12px;border-radius:8px;font-size:13px;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+.footer{background:#0f0f0f;color:#6b7280;text-align:center;padding:26px;font-size:12px;line-height:1.7}
+.whatsapp-float{position:fixed;bottom:24px;right:18px;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;text-decoration:none;box-shadow:0 6px 18px rgba(0,0,0,.3);z-index:999}
 </style>
 </head>
 <body>
-<div class="header"><div class="logo">KC | KAMDEM</div><div class="nav"><a href="#realisations">Realisation</a><a href="#devis">Devis</a></div></div>
+<div class="header"><div class="logo">KC | KAMDEM</div><div class="nav"><a href="#realisations">Chantiers</a><a href="#devis">Devis</a></div></div>
+
 <div class="hero">
-<div class="badge">Disponible a Yaounde - Devis 24h</div>
-<h1>Technicien Batiment a <span>Yaounde</span><br>Je construis ta maison comme la mienne</h1>
-<p>Fondation, elevation, finition. Tous les jours sur le chantier.</p>
-<a class="btn" href="#devis">Demander un devis 24H</a>
-</div>
-<div class="services">
-<div class="card"><h3>Fondation complete</h3><p>Fouille, ferraillage, longrines. Sol Yaounde maitrise.</p><div class="price">A partir de 300k</div></div>
-<div class="card"><h3>Plan 2D / 3D</h3><p>Plan simple, devis detaille.</p><div class="price">50.000F</div></div>
-<div class="card"><h3>Suivi de chantier</h3><p>Present tous les jours. Photos chaque soir.</p><div class="price">100k / mois</div></div>
+<div class="badge">📍 Yaoundé & alentours - Réponse en 2H</div>
+<h1>Je construis ta maison à <span>Yaoundé</span><br>comme si c'était la mienne</h1>
+<p>Fondation solide, élévation droite, finition propre. Je suis tous les jours sur le chantier et je t'envoie les photos chaque soir.</p>
+<a class="btn" href="#devis">Demander un devis gratuit →</a>
+<div class="trust"><span>✅ Devis gratuit 24h</span><span>✅ Photos journalières</span><span>✅ Paiement par étape</span></div>
 </div>
 
-<div style="background:#111;padding:40px 18px;" id="devis">
-<h2 style="color:#fff;text-align:center;margin-bottom:8px;">Demander un devis gratuit</h2>
-<p style="color:#9ca3af;text-align:center;margin-bottom:25px;font-size:14px">Réponse en 2h sur WhatsApp</p>
-<form id="devisForm" style="max-width:500px;margin:0 auto;background:#fff;padding:22px;border-radius:12px;display:grid;gap:14px">
-<input type="text" id="nom" placeholder="Ton nom complet" required style="padding:13px;border:1px solid #ddd;border-radius:8px;font-size:15px">
-<input type="tel" id="telephone" placeholder="Ton numéro WhatsApp ex: 659..." required style="padding:13px;border:1px solid #ddd;border-radius:8px;font-size:15px">
-<input type="text" id="quartier" placeholder="Quartier ex: Odza, Biyem-Assi" required style="padding:13px;border:1px solid #ddd;border-radius:8px;font-size:15px">
-<select id="type" style="padding:13px;border:1px solid #ddd;border-radius:8px;font-size:15px;background:#fff">
-<option value="Construction R+0">Construction R+0</option>
-<option value="Construction R+1">Construction R+1</option>
+<div class="services">
+<div class="card"><h3>🏗️ Fondation complète</h3><p>Villa R+0 / R+1 - Sol de Yaoundé maîtrisé</p><ul><li>Fouille + ferraillage</li><li>Longrines + semelles</li><li>Étanchéité</li></ul><div class="price">À partir de 300k <small>/ main d'oeuvre</small></div></div>
+<div class="card"><h3>📐 Plan 2D / 3D + Devis</h3><p>Plan simple, coté, prêt pour le chantier</p><ul><li>Plan 2D coté</li><li>Vue 3D</li><li>Devis matériaux détaillé</li></ul><div class="price">50.000 F <small>fixe</small></div></div>
+<div class="card"><h3>👷 Suivi de chantier</h3><p>Si tu as déjà tes maçons, je contrôle</p><ul><li>Présence quotidienne</li><li>Photos + vidéos / soir</li><li>Respect du plan</li></ul><div class="price">100k / mois</div></div>
+</div>
+
+<div class="steps">
+<h2>Comment je travaille ?</h2>
+<div class="steps-grid">
+<div class="step"><b>1</b><div><strong>Tu m'appelles / WhatsApp</strong><br><span style="font-size:12px;color:#6b7280">Tu m'expliques ton terrain, quartier, budget</span></div></div>
+<div class="step"><b>2</b><div><strong>Devis clair en 24h</strong><br><span style="font-size:12px;color:#6b7280">Je viens voir le terrain, je te donne prix fixe sans surprise</span></div></div>
+<div class="step"><b>3</b><div><strong>Chantier + photos</strong><br><span style="font-size:12px;color:#6b7280">On commence, tu reçois photo tous les soirs</span></div></div>
+</div>
+</div>
+
+<div class="gallery" id="realisations">
+<h2>Mes chantiers réels à Yaoundé</h2><p class="sub">Pas de photos internet - C'est mon travail</p>
+<div class="grid">
+<div class="item"><img src="chantier1.jpg"><p>Fondation villa - Odza<small>Longrines + ferraillage 12mm</small></p></div>
+<div class="item"><img src="chantier2.jpg"><p>Élévation en cours - Nkoabang<small>Équipe 6 ouvriers + niveau laser</small></p></div>
+<div class="item"><img src="chantier3.jpg"><p>Villa R+0 livrée - Toiture<small>Poteaux 20x20 + toiture bac acier</small></p></div>
+</div>
+</div>
+
+<div style="background:#111;padding:45px 18px;" id="devis">
+<h2 style="color:#fff;text-align:center;margin-bottom:8px;">Devis gratuit en 2h</h2>
+<p style="color:#9ca3af;text-align:center;margin-bottom:26px;font-size:14px">Dis-moi ton quartier, je te réponds sur WhatsApp</p>
+<form id="devisForm" style="max-width:520px;margin:0 auto;background:#fff;padding:24px;border-radius:14px;display:grid;gap:14px">
+<input type="text" id="nom" placeholder="Ton nom complet" required style="padding:14px;border:1px solid #ddd;border-radius:10px;font-size:15px">
+<input type="tel" id="telephone" placeholder="Ton numéro WhatsApp ex: 659..." required style="padding:14px;border:1px solid #ddd;border-radius:10px;font-size:15px">
+<input type="text" id="quartier" placeholder="Quartier ex: Odza, Biyem-Assi, Emana" required style="padding:14px;border:1px solid #ddd;border-radius:10px;font-size:15px">
+<select id="type" style="padding:14px;border:1px solid #ddd;border-radius:10px;font-size:15px;background:#fff">
+<option value="Construction R+0">Construction R+0 (1 niveau)</option>
+<option value="Construction R+1">Construction R+1 (2 niveaux)</option>
 <option value="Fondation seulement">Fondation seulement</option>
-<option value="Plan 2D/3D">Plan 2D/3D</option>
-<option value="Rénovation">Rénovation</option>
+<option value="Plan 2D/3D">Plan 2D/3D seulement</option>
+<option value="Rénovation / Extension">Rénovation / Extension</option>
 </select>
-<input type="text" id="budget" placeholder="Ton budget ex: 5 millions FCFA" style="padding:13px;border:1px solid #ddd;border-radius:8px;font-size:15px">
-<button type="submit" id="btnSubmit" style="background:#facc15;color:#111;padding:15px;border:none;border-radius:8px;font-weight:900;font-size:16px;cursor:pointer">ENVOYER SUR WHATSAPP</button>
+<input type="text" id="budget" placeholder="Ton budget ex: 10 millions FCFA" style="padding:14px;border:1px solid #ddd;border-radius:10px;font-size:15px">
+<button type="submit" id="btnSubmit" style="background:#facc15;color:#111;padding:16px;border:none;border-radius:10px;font-weight:900;font-size:16px;cursor:pointer">ENVOYER SUR WHATSAPP →</button>
+<p style="font-size:11px;color:#9ca3af;text-align:center">En cliquant, tu ouvres WhatsApp avec ton message pré-rempli. Réponse rapide.</p>
 </form>
 </div>
 
 <script>
 document.getElementById('devisForm').addEventListener('submit', function(e){
   e.preventDefault();
-  let btn = document.getElementById('btnSubmit');
-  btn.innerText = "Ouverture WhatsApp...";
-  
-  let nom = document.getElementById('nom').value.trim();
-  let telephone = document.getElementById('telephone').value.trim();
-  let quartier = document.getElementById('quartier').value.trim();
-  let type = document.getElementById('type').value;
-  let budget = document.getElementById('budget').value.trim() || "Non précisé";
-
-  let message = `Bonjour Christian 👋\nJe viens de ton site kamdem-bruno.vercel.app\n\n👤 Nom: ${nom}\n📍 Quartier: ${quartier}\n📱 Mon Tel: ${telephone}\n🏗️ Projet: ${type}\n💰 Budget: ${budget}\n\nPeux-tu me faire un devis svp ?`;
-
-  let url = `https://wa.me/237659635612?text=${encodeURIComponent(message)}`;
-  window.open(url, '_blank');
-  
-  setTimeout(()=>{ btn.innerText = "ENVOYER SUR WHATSAPP"; }, 2000);
+  let btn=document.getElementById('btnSubmit'); btn.innerText="Ouverture WhatsApp...";
+  let nom=document.getElementById('nom').value.trim();
+  let telephone=document.getElementById('telephone').value.trim();
+  let quartier=document.getElementById('quartier').value.trim();
+  let type=document.getElementById('type').value;
+  let budget=document.getElementById('budget').value.trim()||"Non précisé";
+  let message=`Bonjour Christian 👋\nJe viens de ton site kamdem-bruno.vercel.app\n\n👤 Nom: ${nom}\n📍 Quartier: ${quartier}\n📱 Mon Tel: ${telephone}\n🏗️ Projet: ${type}\n💰 Budget: ${budget}\n\nPeux-tu me faire un devis svp ?`;
+  window.open(`https://wa.me/237659635612?text=${encodeURIComponent(message)}`,'_blank');
+  setTimeout(()=>{btn.innerText="ENVOYER SUR WHATSAPP →";},2000);
 });
 </script>
 
-<div class="gallery" id="realisations">
-<h2>Mes Chantiers Reels a Yaounde</h2>
-<div class="grid">
-<div class="item"><img src="chantier1.jpg"><p>Fondation villa - Longrines</p></div>
-<div class="item"><img src="chantier2.jpg"><p>Elevation - Equipe en action</p></div>
-<div class="item"><img src="chantier3.jpg"><p>Villa R+0 - Toiture + colonnes</p></div>
-</div>
-</div>
 <div class="avis">
-<h2 style="text-align:center;margin-bottom:16px">Ils m'ont fait confiance</h2>
-<div class="avis-box"><b>M. Atangana - Odza</b> : Fondation propre, respect delai. ⭐⭐⭐⭐⭐</div>
-<div class="avis-box"><b>Mme Ngo - Emana</b> : Devis clair, pas de surprise. ⭐⭐⭐⭐⭐</div>
-<div class="avis-box"><b>Projet Nkoabang</b> : Villa livree, toiture bien posee. ⭐⭐⭐⭐⭐</div>
+<h2 style="text-align:center;margin-bottom:18px">Ils m'ont fait confiance</h2>
+<div class="avis-box"><b>M. Atangana - Odza - Villa R+0</b><br>"Fondation propre, délai respecté. Photos chaque soir, j'étais à Douala tranquille." ⭐⭐⭐⭐⭐</div>
+<div class="avis-box"><b>Mme Ngo - Emana - Fondation</b><br>"Devis clair, pas de surprise après. Travail sérieux." ⭐⭐⭐⭐⭐</div>
+<div class="avis-box"><b>Projet Nkoabang - R+1</b><br>"Villa livrée avant la pluie. Toiture bien posée, pas de fuite." ⭐⭐⭐⭐⭐</div>
 </div>
-<div class="footer">KAMDEM CHRISTIAN - Yaounde<br>659 635 612 | Devis gratuit 24h</div>
+
+<div class="footer">KAMDEM CHRISTIAN - Technicien Bâtiment Yaoundé<br>📱 659 635 612 | Devis gratuit 24h | Paiement par étape<br><br>Yaoundé - Odza - Biyem-Assi - Emana - Nkoabang - Soa</div>
 <a class="whatsapp-float" href="https://wa.me/237659635612?text=Bonjour%20Christian%2C%20j'ai%20vu%20ton%20site%20kamdem-bruno.vercel.app">💬</a>
 </body>
 </html>
